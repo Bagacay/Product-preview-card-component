@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    height: 100%;
+    min-width: 320px;
+    width: 100%;
+
+}
+
+.wrapper{
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 2.5%;
+    margin: 2em 1em;
+    justify-content: center;
+}
+
+.product-img{
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3% ;
+    content: url("/images/image-product-mobile.jpg");
+    width: 100%;
+}
+
+.product-info{
+    padding: 1.5em;
+}
+
+.product-category{
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75em;
+    letter-spacing: .5em;
+}
+
+.product-name{
+    font-family: 'Fraunces', serif;
+    line-height: 1em;
+    padding: .3em 0 .5em 0;
+}
+
+.product-description{
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    line-height: 1.7em;
+    padding-bottom: 1.5em;
+}
+
+.product-price{
+    align-items: center;
+    display: flex;
+}
+
+.product-discounted-price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    padding-right: .5em;
+}
+
+.product-original-price{
+    color: gray;
+    font-size: .9em;
+    text-decoration: line-through;
+}
+
+.add-to-cart-button{
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 7.5px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: .9em;
+    height: 3.5em;
+    margin: 1.25em 0 0 0;
+    width: 100%;
+}
+
+.icon-cart{
+    height: 1em;
+    padding-right: .5em;
+}
+
+@media (min-width: 450px){
+    .wrapper{
+        margin: 4em 2em;
+    }
+}
+
+@media (min-width: 550px){
+    .wrapper{
+        margin: 8em 4em;
+    }
+}
+
+@media (min-width: 700px){
+    .wrapper{
+        display: flex;
+        width: 600px;
+        padding: auto 0;
+        margin: 0 auto;
+    }
+
+    .product-img{
+        content: url("/images/image-product-desktop.jpg");
+        flex: 1 1 0px;
+        width: 0;
+    }
+
+    .product-info{
+        flex: 1 1 0px;
+        width: 0;
+    }
+}
